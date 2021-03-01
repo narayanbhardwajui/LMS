@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'gilroyextrabold';
+  src: url('gilroy-extrabold-webfont.woff2') format('woff2'),
+       url('gilroy-extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gilroylight';
+  src: url('gilroy-light-webfont.woff2') format('woff2'),
+       url('gilroy-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'product_sans';
+    src: url('productsans-black-webfont.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+
+}
+@font-face {
+    font-family: 'product_sans';
+    src: url('productsans-bold-webfont.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+
+}
+@font-face {
+    font-family: 'product_sans';
+    src: url('productsans-light-webfont.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+
+}
+@font-face {
+    font-family: 'product_sans';
+    src: url('productsans-regular-webfont.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login | LMS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+
+    <section class="login-container display-flex" id="login-container">
+
+        <div class="login-sidebar pos-rel hide-mobile">
+            <!-- <div class="sidebar-bg pos-abs"><img src="images/sidebar-bg.svg" alt="sidebar bg" /></div> -->
+            <div class="sidebar-text padding-30 pd-20 text-white">
+                <h3 class="fs22 fsm22 lh-28 f-bold margin-b10 mr-b10">Marketing that delights and delivers results – all from one place.</h3>
+                <p class="margin-0 fw300">Powerful CRM & Marketing automation software that helps your admission teams increase, manage and predict their admissions. </p>
+                <div class="social-share margin-t40 mr-t20 margin-b40 mr-b20">
+                    <a href="#" class="margin-r15 mr-r10"><img src="images/facebook.svg" alt="facebook" /></a>
+                    <a href="#"><img src="images/linkedin.svg" alt="linkedin" /></a>
+                </div>
+                <div class="info-links display-flex f-bold">
+                    <a href="#" class="text-white margin-r15 mr-r10">Privacy Policy</a>
+                    <a href="#" class="text-white">Contact Us</a>
+                </div>
+                <div class="login-btn mr-t30 hide-desktop">
+                    <a class="f-bold" onclick="startLogin()">
+                        Login to Your Account 
+                        <img src="images/arrow-l.svg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="login-right flex-1 display-flex align-items-center">
+            <div class="cube one"><img src="images/cube.svg" alt="cube" /></div>
+            <div class="cube two"><img src="images/cube.svg" alt="cube" /></div>
+            <div class="cube three"><img src="images/cube.svg" alt="cube" /></div>
+            <div class="cube four"><img src="images/cube.svg" alt="cube" /></div>
+
+            <div class="login-form-wrapper">
+                <div class="l-logo margin-b20 mr-b20">
+                    <img src="images/logo.svg" alt="logo" />
+                </div>
+                <h2 class="f-bold fs30 fsm24 lh-36 margin-0 mr-0">Welcome to <span class="text-d-red">CollegeChalo</span> Let’s get started</h2>
+                <span class="margin-t10 mr-t10 inline-block">Sign Up to get the access!</span>
+
+                <div class="login-form margin-t40 mr-t20 margin-b40 mr-b20">
+                    <div class="field-group">
+                        <label>Your Username</label>
+                        <input type="text" class="form-control" placeholder="Enter your username" />
+                    </div>
+                    <div class="field-group">
+                        <label>Your Password</label>
+                        <input type="password" class="form-control" placeholder="Enter your 6 characters or more" />
+                    </div>
+                    <div class="field-group">
+                        <button type="submit" >Login to Your Account</button>
+                    </div>
+                    <div class="accept-tnc margin-b20 mr-b20">
+                        <input id="accept" type="checkbox" />
+                        <label for="accept">
+                            It’s ok to email me about &nbsp;<span class="text-d-red">CollegeChalo</span>
+                        </label>
+                    </div>
+                    <div class="bottom-text">
+                        By continuing, you’re agreeing to our 
+                        <a href="#">customer terms of service</a>, <a href="#">privacy policy</a>, and <a href="#">cookie policy</a>
+                    </div>
+                </div>
+                <!-- login-form -->
+
+
+            </div>
+        </div>
+    </section>
+    <!-- login-container -->
+    
+    <script>
+        function startLogin() {
+           var loginContainer = document.getElementById("login-container");
+           loginContainer.classList.add("open");
+        }
+    </script>
+
+</body>
+</html>

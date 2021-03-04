@@ -231,6 +231,11 @@ svg {
     padding-left: 25px;
 }
 
+.lead-row .dropdown-menu {
+    position: static;
+    display: block;
+}
+
 .prospect-actions li {
     line-height: 1;
     margin-right: 20px;
@@ -296,7 +301,7 @@ table tbody td:not(:first-child) {
     color: #2D3436;
 }
 
-.prospect-actions .dropdown-menu li {
+.lead-row .dropdown-menu li {
     margin: 0 0 8px;
     padding: 0 10px;
 }
@@ -316,17 +321,31 @@ table tbody td:not(:first-child) {
     margin: 5px 0;
 }
 
-.prospect-actions .dropdown-menu {
-    left: auto;
-    right: 0;
+.table>tbody>tr.inner-row>td {
+    padding: 0;
+    border-top: none;
 }
 
-.prospect-actions .open li:last-child svg {
-    transform: rotate(180deg);
+.lead-row {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.lead-group {
+    margin-top: 20px;
+}
+
+.lead-group .title-blue {
+    font-size: 9px;
+    color: #5E3EC5;
+}
+
+.lead-group .lead-des {
+    font-size: 10px;
+    color: #2D3436;
 }
 
 
-/*User Management*/
+/*User management page*/
 
 .user-actions li {
     line-height: 1;
@@ -373,4 +392,116 @@ table tbody td:not(:first-child) {
 .user-role .label {
     border-radius: 6px;
     font-size: 10px;
+}
+
+
+/*Lead Detail Page*/
+
+.breadcrumb {
+    font-size: 10px;
+    background: transparent;
+    margin: 25px 0 0;
+}
+
+.breadcrumb a {
+    color: #5E3EC5;
+    font-weight: 900;
+}
+
+.lead-timeline-action li {
+    margin: 0 10px;
+}
+
+.lead-timeline-action li a {
+    color: #2D3436;
+}
+
+.timeline-info-holder {
+    background: #F8F8F8;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.timeline-info-holder h2 {
+    margin-bottom: 8px;
+}
+
+.timeline-title {
+    font-size: 10px;
+    color: #5E3EC5;
+}
+
+.time-des {
+    font-size: 11px;
+}
+
+.timeline-badge {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #5E3EC5;
+    position: relative;
+    z-index: 1;
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline li {
+    display: flex;
+}
+
+.timeline-panel {
+    margin-left: 8px;
+    padding-bottom: 15px;
+}
+
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    border: 1px dashed #5E3EC5;
+    left: 5%;
+    margin-left: -3px;
+}
+
+.lead-timeline-action,
+.timeline-progress {
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    padding: 10px 0;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.lead-timeline .footer-action {
+    margin: 20px 0;
+}
+
+.lead-details .user-tab li a {
+    padding: 10px 12px;
+}
+
+.lead-details .user-tab {
+    margin: 0 0 20px;
+}
+
+.lead-date {
+    color: #5E3EC5;
+    margin-bottom: 5px;
+}
+
+.lead-time {
+    color: #8395A7;
+}
+
+.lead-descriptions {
+    text-indent: 30px;
+    margin-bottom: 20px;
+}
+
+.lead-descriptions .lead-time-date {
+    color: #8395A7;
 }

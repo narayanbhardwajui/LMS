@@ -400,7 +400,8 @@ table tbody td:not(:first-child) {
 .breadcrumb {
     font-size: 10px;
     background: transparent;
-    margin: 25px 0 0;
+    margin-top: 20px;
+    padding: 0;
 }
 
 .breadcrumb a {

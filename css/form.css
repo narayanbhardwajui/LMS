@@ -1,0 +1,49 @@
+.form-holder .breadcrumb {
+    margin-bottom: 20px;
+}
+
+.form-astric {
+    color: #ff0000;
+}
+
+.form-control {
+    font-size: 10px;
+    background: #FFFFFF;
+    border: 0.5px solid #2D3436;
+    border-radius: 6px;
+}
+
+.form-control:focus {
+    border-color: #5E3EC5;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(94 62 197 / 60%);
+}
+
+.slected-lbel {
+    margin-top: 10px;
+}
+
+.slected-lbel .label {
+    padding: 5px 8px;
+    margin-right: 3px;
+    border-radius: 6px;
+}
+
+.form-holder .btn {
+    border-radius: 25px;
+    min-width: 80px;
+    margin-top: 10px;
+}
+
+.form-holder .btn-primary {
+    background: #5E3EC5;
+}
+
+.form-holder .btn-primary:hover {
+    color: #5E3EC5;
+    background: #FFFFFF;
+}
+
+.form-holder .btn-default:hover {
+    background: #5E3EC5;
+    color: #FFFFFF;
+}

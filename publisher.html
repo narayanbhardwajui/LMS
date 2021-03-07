@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>New Users | LMS</title>
+    <title>Publisher | LMS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/common.css" />
@@ -67,7 +67,7 @@
                         <span class="nav-text">Marketing</span>
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="#">
                         <svg class="dash-icons">
                             <use xlink:href="images/icons.svg#publisher" />
@@ -75,7 +75,7 @@
                         <span class="nav-text">Publisher</span>
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="user-management.html">
                         <svg class="dash-icons">
                             <use xlink:href="images/icons.svg#team" />
@@ -151,88 +151,146 @@
                     <li class="active">
                         <a data-toggle="tab" href="#tab1">
                             <svg aria-label="" class="dash-icons">
-                        <use xlink:href="images/icons.svg#users" />
-                    </svg> Users</a>
+                        <use xlink:href="images/icons.svg#general" />
+                    </svg> General Details</a>
                     </li>
                     <li>
                         <a data-toggle="tab" href="#tab2">
                             <svg aria-label="" class="dash-icons">
-                        <use xlink:href="images/icons.svg#roles" />
-                    </svg>Roles</a>
+                        <use xlink:href="images/icons.svg#bank" />
+                    </svg>Bank Details</a>
                     </li>
                     <li>
                         <a data-toggle="tab" href="#tab3">
                             <svg aria-label="" class="dash-icons">
-                        <use xlink:href="images/icons.svg#permission" />
-                    </svg>Permissions</a>
+                        <use xlink:href="images/icons.svg#address" />
+                    </svg>Address</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#tab4">
+                            <svg aria-label="" class="dash-icons">
+                        <use xlink:href="images/icons.svg#social" />
+                    </svg>Social</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#ta5">
+                            <svg aria-label="" class="dash-icons">
+                        <use xlink:href="images/icons.svg#status" />
+                    </svg>Status</a>
                     </li>
                 </ul>
             </header>
             <!-- Form Content-->
             <div class="tab-content form-holder">
                 <div id="tab1" class="tab-pane fade in active">
-                    <ul class="breadcrumb mb-10">
-                        <li><a href="#">Users List</a></li>
-                        <li class="active">Adding New User</li>
-                    </ul>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <form>
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-5">
                                 <div class="form-group">
-                                    <label for="name">Name <span class="form-astric">*</span></label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter full name">
+                                    <label for="publisher-code">Publisher Code <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="publisher-code" placeholder="Enter publisher code">
                                 </div>
                                 <div class="form-group">
-                                    <label for="email">Email <span class="form-astric">*</span></label>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter email-ID">
+                                    <label for="publisher-name">Publisher Name <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="publisher-name" placeholder="Enter publisher name">
                                 </div>
                                 <div class="form-group">
-                                    <label for="pwd">Password <span class="form-astric">*</span></label>
-                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password of 6 characters or more">
+                                    <label for="publisher-describe">Publisher Description <span class="form-astric">*</span></label>
+                                    <textarea type="text" class="form-control" rows="5" id="publisher-describe" placeholder="Describe the publisher"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <label for="phone">Phone <span class="form-astric">*</span></label>
-                                    <input type="tel" class="form-control" id="phone" placeholder="Enter 10 digits valid phone number">
-                                </div>
-                                <div class="form-group">
-                                    <label for="role">Roles <span class="form-astric">*</span></label>
+                                    <label for="role">Subscription Plan <span class="form-astric">*</span></label>
                                     <select class="form-control" id="role">
-                                        <option selected>Select a role</option>
-                                        <option>administrator</option>
-                                        <option>manage_sliders</option>
+                                        <option selected>Select a subscription plan</option>
+                                        <option>subscription_1</option>
+                                        <option>subscription_2</option>
                                     </select>
                                     <div class="slected-lbel">
-                                        <span class="label label-default">administrator 
-                                            <svg aria-label="" class="dash-icons">
-                                                <use xlink:href="images/icons.svg#cross" />
-                                            </svg>
-                                        </span>
-                                        <span class="label label-default">manage_sliders
+                                        <span class="label label-default">subscription_1 
                                             <svg aria-label="" class="dash-icons">
                                                 <use xlink:href="images/icons.svg#cross" />
                                             </svg>
                                         </span>
                                     </div>
                                 </div>
-                                <div class="form-group display-flex">
-                                    <button type="button" class="btn btn-primary mr-8">Save</button>
+                                <div class="form-group">
+                                    <label for="short-name">Short Name <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="short-name" placeholder="Enter short name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Slug">Slug <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="Slug" placeholder="Enter slug">
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="form-group">
+                                    <div class="drop-zone">
+                                        <svg aria-label="" class="dash-icons">
+                                            <use xlink:href="images/icons.svg#uplod" />
+                                        </svg>
+                                        <span class="drop-zone-prompt">Drag or Browse Logo Here</span>
+                                        <input type="file" name="myFile" class="drop-zone-input">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="estimated">Estimated Year <span class="form-astric">*</span></label>
+                                    <select class="form-control" id="estimated">
+                                    <option selected>Select a year</option>
+                                    <option>2010</option>
+                                    <option>2011</option>
+                                </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number <span class="form-astric">*</span></label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Enter 10 digit valid phone number">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone-verified">Phone Number Verified <span class="form-astric">*</span></label>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-inline"><input type="checkbox" value="">Yes</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="">No</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone-verified">Category <span class="form-astric">*</span></label>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-inline"><input type="checkbox" value="">users_manage</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="">create_sliders</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="">view_sliders</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="">edit_sliders</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="app-id">App ID <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="app-id" placeholder="Enter app ID">
+                                </div>
+                                <div class="form-group">
+                                    <label for="app-secret">App Secret <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="app-secret" placeholder="Enter app secret">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group display-flex justify-content-end">
+                                    <button type="button" class="btn btn-primary mr-8">Next</button>
                                     <button type="button" class="btn btn-default">Reset</button>
                                 </div>
-                            </form>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <div id="tab2" class="tab-pane fade">
-                    <ul class="breadcrumb mb-10">
-                        <li><a href="#">Users List</a></li>
-                        <li class="active">Adding New Roles</li>
-                    </ul>
+                    Bank Details
                 </div>
                 <div id="tab3" class="tab-pane fade">
-                    <ul class="breadcrumb mb-10">
-                        <li><a href="#">Users List</a></li>
-                        <li class="active">Adding New Permissions</li>
-                    </ul>
+                    Address
+                </div>
+                <div id="tab4" class="tab-pane fade">
+                    Social
+                </div>
+                <div id="tab5" class="tab-pane fade">
+                    Status
                 </div>
             </div>
         </section>

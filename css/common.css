@@ -121,6 +121,10 @@ ul {
     margin-right: 4px;
 }
 
+.mt-10 {
+    margin-top: 10px;
+}
+
 .underline {
     text-decoration: underline
 }

@@ -1,0 +1,14 @@
+.new-user .form-control {
+    max-width: 300px;
+}
+.permission-label {
+    display: flex;
+    align-items: center;
+}
+.permission-chkbox {
+    margin-top: 0 !important;
+    margin-right: 4px !important;
+}
+.permission-wrapper .checkbox {
+    margin-right: 10px;
+}

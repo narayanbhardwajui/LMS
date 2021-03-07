@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/lead.css" />
     <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/new-user.css" />
 </head>
 
 <body>
@@ -121,7 +122,8 @@
                         </li>
 
                         <li class="dropdown user-menu">
-                            <a href="#" class="dropdown-toggle display-flex align-items-center" data-toggle="dropdown" aria-expanded="false">
+                            <a href="#" class="dropdown-toggle display-flex align-items-center" data-toggle="dropdown"
+                                aria-expanded="false">
                                 <figure class="display-flex align-items-center">
                                     <img src="images/user-icon.png" class="user-image" alt="User Image">
                                     <figcaption class="display-flex align-items-center justify-space-between">
@@ -151,67 +153,67 @@
                     <li class="active">
                         <a data-toggle="tab" href="#tab1">
                             <svg aria-label="" class="dash-icons">
-                        <use xlink:href="images/icons.svg#users" />
-                    </svg> Users</a>
+                                <use xlink:href="images/icons.svg#users" />
+                            </svg> Users</a>
                     </li>
                     <li>
                         <a data-toggle="tab" href="#tab2">
                             <svg aria-label="" class="dash-icons">
-                        <use xlink:href="images/icons.svg#roles" />
-                    </svg>Roles</a>
+                                <use xlink:href="images/icons.svg#roles" />
+                            </svg>Roles</a>
                     </li>
                     <li>
                         <a data-toggle="tab" href="#tab3">
                             <svg aria-label="" class="dash-icons">
-                        <use xlink:href="images/icons.svg#permission" />
-                    </svg>Permissions</a>
+                                <use xlink:href="images/icons.svg#permission" />
+                            </svg>Permissions</a>
                     </li>
                 </ul>
             </header>
             <!-- Form Content-->
-            <div class="tab-content form-holder">
+            <div class="tab-content form-holder new-user">
                 <div id="tab1" class="tab-pane fade in active">
                     <ul class="breadcrumb mb-10">
                         <li><a href="#">Users List</a></li>
                         <li class="active">Adding New User</li>
                     </ul>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <form>
-                                <div class="form-group">
-                                    <label for="name">Name <span class="form-astric">*</span></label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter full name">
+                    <div>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name <span class="form-astric">*</span></label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email <span class="form-astric">*</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email-ID">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Password <span class="form-astric">*</span></label>
+                                <input type="password" class="form-control" id="pwd"
+                                    placeholder="Enter password of 6 characters or more">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone <span class="form-astric">*</span></label>
+                                <input type="tel" class="form-control" id="phone"
+                                    placeholder="Enter 10 digits valid phone number">
+                            </div>
+                            <div class="form-group">
+                                <label for="role">Roles <span class="form-astric">*</span></label>
+                                <select class="form-control" id="role">
+                                    <option selected>Select a role</option>
+                                    <option>administrator</option>
+                                    <option>manage_sliders</option>
+                                </select>
+                                <div class="slected-lbel">
+                                    <span class="label label-default">administrator</span>
+                                    <span class="label label-default">manage_sliders</span>
                                 </div>
-                                <div class="form-group">
-                                    <label for="email">Email <span class="form-astric">*</span></label>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter email-ID">
-                                </div>
-                                <div class="form-group">
-                                    <label for="pwd">Password <span class="form-astric">*</span></label>
-                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password of 6 characters or more">
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone">Phone <span class="form-astric">*</span></label>
-                                    <input type="tel" class="form-control" id="phone" placeholder="Enter 10 digits valid phone number">
-                                </div>
-                                <div class="form-group">
-                                    <label for="role">Roles <span class="form-astric">*</span></label>
-                                    <select class="form-control" id="role">
-                                        <option selected>Select a role</option>
-                                        <option>administrator</option>
-                                        <option>manage_sliders</option>
-                                    </select>
-                                    <div class="slected-lbel">
-                                        <span class="label label-default">administrator</span>
-                                        <span class="label label-default">manage_sliders</span>
-                                    </div>
-                                </div>
-                                <div class="form-group display-flex">
-                                    <button type="button" class="btn btn-primary mr-8 ">Save</button>
-                                    <button type="button" class="btn btn-default">Reset</button>
-                                </div>
-                            </form>
-                        </div>
+                            </div>
+                            <div class="form-group display-flex">
+                                <button type="button" class="btn btn-primary mr-8 ">Save</button>
+                                <button type="button" class="btn btn-default">Reset</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div id="tab2" class="tab-pane fade">
@@ -219,12 +221,115 @@
                         <li><a href="#">Users List</a></li>
                         <li class="active">Adding New Roles</li>
                     </ul>
+                    <div>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name <span class="form-astric">*</span></label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter role name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="name">Permissions <span class="form-astric">*</span></label>
+                                <div class="permission-wrapper form-inline">
+                                    <div class="checkbox">
+                                        <label class="permission-label">
+                                            <input type="checkbox" class="permission-chkbox"> users_manage
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label class="permission-label">
+                                            <input type="checkbox" class="permission-chkbox"> create_sliders
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label class="permission-label">
+                                            <input type="checkbox" class="permission-chkbox"> view_sliders
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label class="permission-label">
+                                            <input type="checkbox" class="permission-chkbox"> delete_sliders
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label class="permission-label">
+                                            <input type="checkbox" class="permission-chkbox"> create_colleges
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label class="permission-label">
+                                            <input type="checkbox" class="permission-chkbox"> view_colleges
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label class="permission-label">
+                                            <input type="checkbox" class="permission-chkbox"> edit_colleges
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label class="permission-label">
+                                            <input type="checkbox" class="permission-chkbox"> delete_colleges
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label class="permission-label">
+                                            <input type="checkbox" class="permission-chkbox"> create_user_applied
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label class="permission-label">
+                                            <input type="checkbox" class="permission-chkbox"> view_user_applied
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label class="permission-label">
+                                            <input type="checkbox" class="permission-chkbox"> edit_user_applied
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label class="permission-label">
+                                            <input type="checkbox" class="permission-chkbox"> delete_user_applied
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label class="permission-label">
+                                            <input type="checkbox" class="permission-chkbox"> create_exams
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label class="permission-label">
+                                            <input type="checkbox" class="permission-chkbox"> view_exams
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group display-flex">
+                                <button type="button" class="btn btn-primary mr-8 ">Save</button>
+                                <button type="button" class="btn btn-default">Reset</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div id="tab3" class="tab-pane fade">
                     <ul class="breadcrumb mb-10">
                         <li><a href="#">Users List</a></li>
                         <li class="active">Adding New Permissions</li>
                     </ul>
+                                        <div>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name <span class="form-astric">*</span></label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter permission name">
+                            </div>
+
+                            <div class="form-group display-flex">
+                                <button type="button" class="btn btn-primary mr-8 ">Save</button>
+                                <button type="button" class="btn btn-default">Reset</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>

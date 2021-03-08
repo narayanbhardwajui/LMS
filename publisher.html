@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Publisher | LMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/lead.css" />
+    <link rel="stylesheet" href="css/form.css" />
+</head>
+
+<body>
+    <section class="lead-list-holder display-grid">
+        <!-- Sidebar -->
+        <aside class="lead-sidebar bg-grey-light hv-100">
+            <div class="logo">
+                <img src="images/lead-logo.svg" alt="Lead Logo" />
+            </div>
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="#">
+                        <svg class="dash-icons">
+                            <use xlink:href="images/icons.svg#dashboard" />
+                        </svg>
+                        <span class="nav-text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="lead.html">
+                        <svg class="dash-icons">
+                            <use xlink:href="images/icons.svg#leads" />
+                        </svg>
+                        <span class="nav-text">Leads</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="dash-icons">
+                            <use xlink:href="images/icons.svg#reports" />
+                        </svg>
+                        <span class="nav-text">Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="dash-icons">
+                            <use xlink:href="images/icons.svg#appointments" />
+                        </svg>
+                        <span class="nav-text">Appointments</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="dash-icons">
+                            <use xlink:href="images/icons.svg#tranctions" />
+                        </svg>
+                        <span class="nav-text">Tranctions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="dash-icons">
+                            <use xlink:href="images/icons.svg#marketing" />
+                        </svg>
+                        <span class="nav-text">Marketing</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <svg class="dash-icons">
+                            <use xlink:href="images/icons.svg#publisher" />
+                        </svg>
+                        <span class="nav-text">Publisher</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-management.html">
+                        <svg class="dash-icons">
+                            <use xlink:href="images/icons.svg#team" />
+                        </svg>
+                        <span class="nav-text">User Management</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="dash-icons">
+                            <use xlink:href="images/icons.svg#settings" />
+                        </svg>
+                        <span class="nav-text">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- Content Section -->
+        <section class="lead-main-content hv-100">
+            <header>
+                <div class="user-menu-holder display-flex justify-space-between align-items-center">
+                    <form>
+                        <div class="search-group">
+                            <button class="search-btn">
+                                <svg aria-label="" class="dash-icons">
+                                    <use xlink:href="images/icons.svg#search" />
+                                </svg>
+                            </button>
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </form>
+                    <ul class="notifications-holder display-flex align-items-center">
+                        <li class="dropdown notifications-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <svg class="dash-icons">
+                                    <use xlink:href="images/icons.svg#notification" />
+                                </svg>
+                                <span class="label label-danger">&nbsp;</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li> <a href="">You have 2 notifications</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown user-menu">
+                            <a href="#" class="dropdown-toggle display-flex align-items-center" data-toggle="dropdown" aria-expanded="false">
+                                <figure class="display-flex align-items-center">
+                                    <img src="images/user-icon.png" class="user-image" alt="User Image">
+                                    <figcaption class="display-flex align-items-center justify-space-between">
+                                        <span class="hidden-xs">John Doe</span>
+                                        <svg aria-label="down icon" style="width: 10px; height:10px">
+                                            <use xlink:href="images/icons.svg#arrow-dn" />
+                                        </svg>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li>
+                                    <a>
+                                        Options 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        Options 1
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="user-tab display-flex align-items-center">
+                    <li class="active">
+                        <a data-toggle="tab" href="#tab1">
+                            <svg aria-label="" class="dash-icons">
+                        <use xlink:href="images/icons.svg#general" />
+                    </svg> General Details</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#tab2">
+                            <svg aria-label="" class="dash-icons">
+                        <use xlink:href="images/icons.svg#bank" />
+                    </svg>Bank Details</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#tab3">
+                            <svg aria-label="" class="dash-icons">
+                        <use xlink:href="images/icons.svg#address" />
+                    </svg>Address</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#tab4">
+                            <svg aria-label="" class="dash-icons">
+                        <use xlink:href="images/icons.svg#social" />
+                    </svg>Social</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#ta5">
+                            <svg aria-label="" class="dash-icons">
+                        <use xlink:href="images/icons.svg#status" />
+                    </svg>Status</a>
+                    </li>
+                </ul>
+            </header>
+            <!-- Form Content-->
+            <div class="tab-content form-holder">
+                <div id="tab1" class="tab-pane fade in active">
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="form-group">
+                                    <label for="publisher-code">Publisher Code <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="publisher-code" placeholder="Enter publisher code">
+                                </div>
+                                <div class="form-group">
+                                    <label for="publisher-name">Publisher Name <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="publisher-name" placeholder="Enter publisher name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="publisher-describe">Publisher Description <span class="form-astric">*</span></label>
+                                    <textarea type="text" class="form-control" rows="5" id="publisher-describe" placeholder="Describe the publisher"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="role">Subscription Plan <span class="form-astric">*</span></label>
+                                    <select class="form-control" id="role">
+                                        <option selected>Select a subscription plan</option>
+                                        <option>subscription_1</option>
+                                        <option>subscription_2</option>
+                                    </select>
+                                    <div class="slected-lbel">
+                                        <span class="label label-default">subscription_1 
+                                            <svg aria-label="" class="dash-icons">
+                                                <use xlink:href="images/icons.svg#cross" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="short-name">Short Name <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="short-name" placeholder="Enter short name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Slug">Slug <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="Slug" placeholder="Enter slug">
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="form-group">
+                                    <div class="drop-zone">
+                                        <svg aria-label="" class="dash-icons">
+                                            <use xlink:href="images/icons.svg#uplod" />
+                                        </svg>
+                                        <span class="drop-zone-prompt">Drag or Browse Logo Here</span>
+                                        <input type="file" name="myFile" class="drop-zone-input">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="estimated">Estimated Year <span class="form-astric">*</span></label>
+                                    <select class="form-control" id="estimated">
+                                    <option selected>Select a year</option>
+                                    <option>2010</option>
+                                    <option>2011</option>
+                                </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number <span class="form-astric">*</span></label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Enter 10 digit valid phone number">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone-verified">Phone Number Verified <span class="form-astric">*</span></label>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-inline"><input type="checkbox" value="">Yes</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="">No</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone-verified">Category <span class="form-astric">*</span></label>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-inline"><input type="checkbox" value="">users_manage</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="">create_sliders</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="">view_sliders</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="">edit_sliders</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="app-id">App ID <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="app-id" placeholder="Enter app ID">
+                                </div>
+                                <div class="form-group">
+                                    <label for="app-secret">App Secret <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="app-secret" placeholder="Enter app secret">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group display-flex justify-content-end">
+                                    <button type="button" class="btn btn-primary mr-8">Next</button>
+                                    <button type="button" class="btn btn-default">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="tab2" class="tab-pane fade">
+                    Bank Details
+                </div>
+                <div id="tab3" class="tab-pane fade">
+                    Address
+                </div>
+                <div id="tab4" class="tab-pane fade">
+                    Social
+                </div>
+                <div id="tab5" class="tab-pane fade">
+                    Status
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

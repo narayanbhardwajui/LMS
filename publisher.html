@@ -173,14 +173,14 @@
                     </svg>Social</a>
                     </li>
                     <li>
-                        <a data-toggle="tab" href="#ta5">
+                        <a data-toggle="tab" href="#tab5">
                             <svg aria-label="" class="dash-icons">
                         <use xlink:href="images/icons.svg#status" />
                     </svg>Status</a>
                     </li>
                 </ul>
             </header>
-            <!-- Form Content-->
+            <!-- Tab Content-->
             <div class="tab-content form-holder">
                 <div id="tab1" class="tab-pane fade in active">
                     <form>
@@ -281,16 +281,246 @@
                     </form>
                 </div>
                 <div id="tab2" class="tab-pane fade">
-                    Bank Details
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="form-group">
+                                    <label for="account-number">Bank Account Number <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="account-number" placeholder="Enter bank account number">
+                                </div>
+                                <div class="form-group">
+                                    <label for="account-name">Bank Account Name <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="account-name" placeholder="Enter bank account name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="account-type">Bank Account Type <span class="form-astric">*</span></label>
+                                    <select class="form-control" id="account-type">
+                                        <option selected>Select a bank account type</option>
+                                        <option>savings account</option>
+                                        <option>salery account</option>
+                                    </select>
+                                    <div class="slected-lbel">
+                                        <span class="label label-default">savings account 
+                                            <svg aria-label="" class="dash-icons">
+                                                <use xlink:href="images/icons.svg#cross" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="branch-name">Bank Branch Name <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="branch-name" placeholder="Enter name of your bank branch">
+                                </div>
+                                <div class="form-group">
+                                    <label for="code">IFSC Code <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="code" placeholder="Enter bank’s IFSC code">
+                                </div>
+                                <div class="form-group">
+                                    <label for="detail-verified">Bank Details Verified <span class="form-astric">*</span></label>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-inline"><input type="checkbox" value="">Yes</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="">No</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="clarification">KYC Clarification <span class="form-astric">*</span></label>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-inline"><input type="checkbox" value="">Yes</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="form-group">
+                                    <div class="drop-zone">
+                                        <svg aria-label="" class="dash-icons">
+                                            <use xlink:href="images/icons.svg#uplod" />
+                                        </svg>
+                                        <span class="drop-zone-prompt">Drag or Browse Logo Here</span>
+                                        <input type="file" name="myFile" class="drop-zone-input">
+                                    </div>
+                                    <ul class="drop-list">
+                                        <li>
+                                            <svg aria-label="" class="dash-icons">
+                                                <use xlink:href="images/icons.svg#pdf" />
+                                            </svg>
+                                            <span class="drop-text">PAN Card.pdf</span>
+                                            <svg aria-label="" class="dash-icons cross">
+                                                <use xlink:href="images/icons.svg#cross" />
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg aria-label="" class="dash-icons">
+                                                <use xlink:href="images/icons.svg#pdf" />
+                                            </svg>
+                                            <span class="drop-text">Adhaar Card.pdf</span>
+                                            <svg aria-label="" class="dash-icons cross">
+                                                <use xlink:href="images/icons.svg#cross" />
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group display-flex justify-content-end">
+                                    <button type="button" class="btn btn-primary mr-8">Next</button>
+                                    <button type="button" class="btn btn-default">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <div id="tab3" class="tab-pane fade">
-                    Address
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="form-group select-button">
+                                    <div class="selection">
+                                        <input class="checkbox-tools" type="radio" name="selection-type" checked>
+                                        <label>
+                                        <svg aria-label="" class="dash-icons">
+                                            <use xlink:href="images/icons.svg#home" />
+                                        </svg>
+                                        <span class="button-text">Home</span>
+                                        <svg aria-label="" class="dash-icons check">
+                                            <use xlink:href="images/icons.svg#check" />
+                                        </svg>
+                                        </label>
+                                    </div>
+                                    <div class="selection">
+                                        <input class="checkbox-tools" type="radio" name="selection-type">
+                                        <label>
+                                        <svg aria-label="" class="dash-icons">
+                                            <use xlink:href="images/icons.svg#work" />
+                                        </svg>
+                                        <span class="button-text">Work</span>
+                                        <svg aria-label="" class="dash-icons check">
+                                            <use xlink:href="images/icons.svg#check" />
+                                        </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address-1">Address Line 1 <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="address" placeholder="Enter your address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="address-2">Address Line 2 <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="address" placeholder="Enter your address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">Country <span class="form-astric">*</span></label>
+                                    <select class="form-control" id="country">
+                                        <option selected>Select your country from the dropdown</option>
+                                        <option>India</option>
+                                        <option>US</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State <span class="form-astric">*</span></label>
+                                    <select class="form-control" id="state">
+                                        <option selected>Select your state from the dropdown</option>
+                                        <option>Haryana</option>
+                                        <option>Delhi</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="city">City <span class="form-astric">*</span></label>
+                                    <select class="form-control" id="city">
+                                        <option selected>Select your city from the dropdown</option>
+                                        <option>City 1</option>
+                                        <option>City 2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pincode">Pincode <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="pincode" placeholder="Enter your pincode">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group display-flex justify-content-end">
+                                    <button type="button" class="btn btn-primary mr-8">Next</button>
+                                    <button type="button" class="btn btn-default">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <div id="tab4" class="tab-pane fade">
-                    Social
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="form-group">
+                                    <label for="website">Website <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="website" placeholder="Enter Your Website">
+                                </div>
+                                <div class="form-group">
+                                    <label for="twitter">Twitter <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="twitter" placeholder="@your twitter handle">
+                                </div>
+                                <div class="form-group">
+                                    <label for="facebook">Facebook <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="facebook" placeholder="Enter your facebook profile link">
+                                </div>
+                                <div class="form-group">
+                                    <label for="google">Google <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="google" placeholder="Enter your google profile link">
+                                </div>
+                                <div class="form-group">
+                                    <label for="instagram">Instagram <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="instagram" placeholder="@instagram handle">
+                                </div>
+                                <div class="form-group">
+                                    <label for="youtube">Youtube <span class="form-astric">*</span></label>
+                                    <input type="text" class="form-control" id="youtube" placeholder="Enter your youtube link">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group display-flex justify-content-end">
+                                    <button type="button" class="btn btn-primary mr-8">Next</button>
+                                    <button type="button" class="btn btn-default">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <div id="tab5" class="tab-pane fade">
-                    Status
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="form-group">
+                                    <label for="status">Publisher Status <span class="form-astric">*</span></label>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-inline"><input type="checkbox" value="" checked>Active</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="">Blocked</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="">Deleted</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="created-at">Created at <span class="form-astric">*</span></label>
+                                    <input type="date" class="form-control" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                                </div>
+                                <div class="form-group">
+                                    <label for="updated-at">Updated at <span class="form-astric">*</span></label>
+                                    <input type="date" class="form-control" id="end" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group display-flex justify-content-end">
+                                    <button type="button" class="btn btn-primary mr-8">Save</button>
+                                    <button type="button" class="btn btn-default">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>

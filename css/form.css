@@ -157,3 +157,9 @@ input[type="file"].drop-zone-input {
 .select-button .checkbox-tools:checked+label .check {
     opacity: 1;
 }
+
+.radio-inline,
+.checkbox-inline {
+    margin-left: 0 !important;
+    margin-right: 10px !important;
+}

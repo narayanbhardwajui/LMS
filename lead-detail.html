@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/lead.css" />
+    <link rel="stylesheet" href="css/form.css" />
 </head>
 
 <body>
@@ -402,7 +403,7 @@
                                 <a data-toggle="tab" href="#tab5">Recommendations</a>
                             </li>
                         </ul>
-                        <div class="tab-content">
+                        <div class="tab-content form-holder">
                             <div id="tab1" class="tab-pane fade in active">
                                 <div class="lead-user-group">
                                     <div class="lead-date">Friday, February 26, 2021</div>
@@ -444,7 +445,218 @@
                                 </div>
                             </div>
                             <div id="tab2" class="tab-pane fade">
-                                2
+                                <div class="basic-details">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h2 class="fs20 mb-5">Basic Details</h2>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="name">Name <span class="form-astric">*</span></label>
+                                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email">Email <span class="form-astric">*</span></label>
+                                                    <input type="email" class="form-control" id="email" placeholder="orsonsnyder@gmail.com">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email">Alternate Email <span class="form-astric">*</span></label>
+                                                    <input type="email" class="form-control" id="alternate-email" placeholder="Enter your alternative email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="phone">Alternate Phone Number <span class="form-astric">*</span></label>
+                                                    <input type="tel" class="form-control" id="alternate-phone" placeholder="Enter an alternate phone number">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="phone">Parent Phone Number <span class="form-astric">*</span></label>
+                                                    <input type="tel" class="form-control" id="parent-phone" placeholder="Enter your parents phone number">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name">Father’s Name <span class="form-astric">*</span></label>
+                                                    <input type="text" class="form-control" id="fName" placeholder="Enter your father’s name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="created-at">Date of Birth <span class="form-astric">*</span></label>
+                                                    <input type="date" class="form-control" id="birth-date" name="birth-date" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="name">10th Score <span class="form-astric">*</span></label>
+                                                    <input type="text" class="form-control" id="score10" placeholder="Enter 10th Score">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name">12th Score <span class="form-astric">*</span></label>
+                                                    <input type="text" class="form-control" id="score12" placeholder="Enter 12th Score">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="state">Current State <span class="form-astric">*</span></label>
+                                                    <select class="form-control" id="state">
+                                                        <option selected="">Select a state</option>
+                                                        <option>Rajasthan</option>
+                                                        <option>Haryana</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="city">Current City <span class="form-astric">*</span></label>
+                                                    <select class="form-control" id="city">
+                                                        <option selected="">Select a city</option>
+                                                        <option>Faridabad</option>
+                                                        <option>Ajmeer</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="gender">Gender <span class="form-astric">*</span></label>
+                                                    <div class="checkbox-group">
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">Male</label>
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">Female</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="education">Last Education Level <span class="form-astric">*</span></label>
+                                                    <div class="checkbox-group">
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">12th</label>
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">UG</label>
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">PG</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="category">Category <span class="form-astric">*</span></label>
+                                                    <div class="checkbox-group">
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">Not Available</label>
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">General</label>
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">OBC</label>
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">SC</label>
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">ST</label>
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">Others</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group text-right">
+                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="preferences">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h2 class="fs20 mb-5">Preferences</h2>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="year">Preferred Year <span class="form-astric">*</span></label>
+                                                    <div class="checkbox-group">
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">2021</label>
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">Next Year</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="mode">Preferred Mode <span class="form-astric">*</span></label>
+                                                    <div class="checkbox-group">
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">Full Time</label>
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">Part Time</label>
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">Distance</label>
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">Others</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="level">Level <span class="form-astric">*</span></label>
+                                                    <select class="form-control" id="level">
+                                                        <option selected="">Select a level</option>
+                                                        <option>PG</option>
+                                                        <option>UG</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="degree">Degree <span class="form-astric">*</span></label>
+                                                    <select class="form-control" id="degree">
+                                                        <option selected="">Select a degree</option>
+                                                        <option>P.G.D.M. (Post Graduate Diploma in Managem...</option>
+                                                        <option>UG</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="stream">Stream <span class="form-astric">*</span></label>
+                                                    <select class="form-control" id="stream">
+                                                        <option selected="">Select Stream</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="specialization">Specialization <span class="form-astric">*</span></label>
+                                                    <select class="form-control" id="specialization">
+                                                        <option selected="">Select Specialization</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="location">Preferred Location <span class="form-astric">*</span></label>
+                                                    <select class="form-control" id="location">
+                                                        <option selected="">Select Location</option>
+                                                        <option>Rajasthan</option>
+                                                        <option>Jaipur</option>
+                                                    </select>
+                                                    <div class="slected-lbel">
+                                                        <span class="label label-default">Rajasthan
+                                                            <svg aria-label="" class="dash-icons">
+                                                                <use xlink:href="images/icons.svg#cross"></use>
+                                                            </svg>
+                                                        </span>
+
+                                                        <span class="label label-default">Jaipur
+                                                            <svg aria-label="" class="dash-icons">
+                                                                <use xlink:href="images/icons.svg#cross"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="budget">Budget <span class="form-astric">*</span></label>
+                                                    <select class="form-control" id="budget">
+                                                        <option selected="">Select Budget</option>
+                                                        <option>Budget 1</option>
+                                                        <option>Budget 2</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="domestic">Domestic Land Required <span class="form-astric">*</span></label>
+                                                    <div class="checkbox-group">
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">No</label>
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">Yes</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="study">Interested in Study Abroad? <span class="form-astric">*</span></label>
+                                                    <div class="checkbox-group">
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">No</label>
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">Yes</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="hostel">Interested in Hostel? <span class="form-astric">*</span></label>
+                                                    <div class="checkbox-group">
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">No</label>
+                                                        <label class="checkbox-inline"><input type="checkbox" value="">Yes</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group display-flex flex-end">
+                                                    <button type="button" class="btn btn-default mr-8">Save & View Recommendations</button>
+                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                             <div id="tab3" class="tab-pane fade">
                                 3

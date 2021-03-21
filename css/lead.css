@@ -317,7 +317,7 @@ table tbody td:not(:first-child) {
 }
 
 .conversion-progress .progress {
-    height: 8px;
+    height: 14px;
     margin: 5px 0;
 }
 
@@ -432,6 +432,10 @@ table tbody td:not(:first-child) {
     color: #5E3EC5;
 }
 
+.grey .timeline-title {
+    color: #aaa;
+}
+
 .time-des {
     font-size: 11px;
 }
@@ -443,6 +447,10 @@ table tbody td:not(:first-child) {
     background: #5E3EC5;
     position: relative;
     z-index: 1;
+}
+
+.grey .timeline-badge {
+    background: #8395A7;
 }
 
 .timeline {
@@ -464,8 +472,11 @@ table tbody td:not(:first-child) {
     position: absolute;
     content: " ";
     border: 1px dashed #5E3EC5;
-    left: 5%;
-    margin-left: -3px;
+    left: 4px;
+}
+
+.grey.timeline:before {
+    border: 1px dashed #8395A7;
 }
 
 .lead-timeline-action,
@@ -523,8 +534,4 @@ table tbody td:not(:first-child) {
 
 .recommendations-group .slected-lbel .label {
     margin-bottom: 5px;
-}
-
-.recommendations-group .timeline:before {
-    margin-left: -14px;
 }

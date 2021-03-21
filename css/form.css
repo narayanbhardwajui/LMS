@@ -26,11 +26,13 @@
 .slected-lbel {
     margin-top: 10px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .slected-lbel .label {
     margin-right: 8px;
     border-radius: 6px;
+    padding: 4px 7px;
     display: flex;
     align-items: center;
 }
@@ -162,4 +164,33 @@ input[type="file"].drop-zone-input {
 .checkbox-inline {
     margin-left: 0 !important;
     margin-right: 10px !important;
+}
+
+
+/*button*/
+
+.small-btn {
+    border-radius: 25px;
+    padding: 4px 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+}
+
+.btn-blue {
+    background: #5E3EC5;
+}
+
+.btn-blue:hover {
+    color: #EA4335;
+    background: #FFFFFF;
+}
+
+.btn-orange {
+    background: #EA4335;
+}
+
+.btn-orange:hover {
+    color: #5E3EC5;
+    background: #FFFFFF;
 }

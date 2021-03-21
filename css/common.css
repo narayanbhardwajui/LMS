@@ -129,6 +129,10 @@ ul {
     margin-bottom: 5px;
 }
 
+.mt-auto {
+    margin-top: auto;
+}
+
 .underline {
     text-decoration: underline
 }
@@ -244,6 +248,10 @@ ul {
 
 .flex-1 {
     flex: 1
+}
+
+.flex-half {
+    flex: 0 0 50%;
 }
 
 .display-grid {

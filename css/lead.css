@@ -506,3 +506,25 @@ table tbody td:not(:first-child) {
 .lead-descriptions .lead-time-date {
     color: #8395A7;
 }
+
+
+/*recommendations tab*/
+
+.recommendations-group {
+    background: #F8F8F8;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.recommendations-group:last-child {
+    margin-bottom: 0;
+}
+
+.recommendations-group .slected-lbel .label {
+    margin-bottom: 5px;
+}
+
+.recommendations-group .timeline:before {
+    margin-left: -14px;
+}
